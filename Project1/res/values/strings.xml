@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="green">Turn into green</string>
+    <string name="red">Turn into red</string>
+    <string name="app_name">Project1</string>
+    <string name="mys">Hello 2</string>
+
+</resources>
