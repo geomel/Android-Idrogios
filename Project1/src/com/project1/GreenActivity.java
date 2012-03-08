@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class GreenActivity extends Activity {
 
@@ -14,6 +15,12 @@ public class GreenActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.greenlayout);
+		
+		
+		Bundle b  = getIntent().getExtras();
+		String usname = b.getString("USNAME");
+		Toast.makeText(getApplicationContext(), usname, 10).show();
+		
 		Button greenbtn = (Button) findViewById(R.id.turnredbtn);
 		greenbtn.setOnClickListener(new OnClickListener() {
 			
