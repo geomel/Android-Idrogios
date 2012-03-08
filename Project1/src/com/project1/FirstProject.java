@@ -21,7 +21,12 @@ public class FirstProject extends Activity {
 			
 			@Override
 			public void onClick(View v) {
+				
+				Bundle b = new Bundle();
+				b.putString("USNAME", "Geomel");
+				
 				Intent i = new Intent(FirstProject.this,GreenActivity.class);
+				i.putExtras(b);
 				startActivity(i);
 				
 			}
